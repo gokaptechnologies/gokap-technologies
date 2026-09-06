@@ -1,0 +1,464 @@
+/* =========================================
+   GOKAP TECHNOLOGIES
+   THANK YOU PAGE
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(40, 80, 255, 0.16),
+            transparent 38%
+        ),
+        #05060b;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.thank-header {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(5, 6, 11, 0.85);
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.brand-dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #377dff;
+
+    box-shadow:
+        0 0 12px #377dff,
+        0 0 25px rgba(55, 125, 255, 0.5);
+}
+
+.brand small {
+    font-size: 9px;
+    letter-spacing: 3px;
+    opacity: 0.6;
+    margin-left: 3px;
+}
+
+
+/* HEADER BUTTON */
+
+.header-button {
+    text-decoration: none;
+
+    color: #111;
+
+    background: #ffffff;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.header-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 30px rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+.thank-main {
+    width: 100%;
+    min-height: calc(100vh - 155px);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 25px;
+}
+
+
+/* CONTENT */
+
+.thank-content {
+    width: 100%;
+    max-width: 850px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   SUCCESS CHECK
+   ========================================= */
+
+.success-mark {
+    width: 62px;
+    height: 62px;
+
+    margin: 0 auto 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(65, 130, 255, 0.7);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    background: rgba(35, 70, 180, 0.12);
+
+    box-shadow:
+        0 0 25px rgba(40, 90, 255, 0.25);
+}
+
+
+/* =========================================
+   SMALL TITLE
+   ========================================= */
+
+.small-title {
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    color: #7da7ff;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MAIN HEADING
+   ========================================= */
+
+.thank-content h1 {
+    margin: 0;
+
+    font-size: clamp(60px, 10vw, 125px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    font-weight: 800;
+}
+
+.thank-content h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #5b8cff,
+            #9b6cff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* =========================================
+   MESSAGE
+   ========================================= */
+
+.main-message {
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+.sub-message {
+    max-width: 620px;
+
+    margin: 12px auto 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.58);
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+}
+
+
+/* PRIMARY */
+
+.primary-button {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #245cff,
+            #744cff
+        );
+
+    box-shadow:
+        0 10px 35px rgba(60, 80, 255, 0.25);
+}
+
+.primary-button span {
+    margin-left: 12px;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 40px rgba(60, 80, 255, 0.4);
+}
+
+
+/* SECONDARY */
+
+.secondary-button {
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.35);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.thank-footer {
+    width: 100%;
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 7%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 12px;
+}
+
+.footer-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.footer-brand strong {
+    color: #ffffff;
+
+    letter-spacing: 2px;
+}
+
+.footer-brand span {
+    letter-spacing: 2px;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .thank-header {
+        height: 70px;
+
+        padding: 0 20px;
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+
+    .brand small {
+        display: none;
+    }
+
+    .header-button {
+        padding: 10px 16px;
+
+        font-size: 11px;
+    }
+
+    .thank-main {
+        min-height: auto;
+
+        padding: 90px 20px;
+    }
+
+    .success-mark {
+        width: 55px;
+        height: 55px;
+
+        font-size: 23px;
+    }
+
+    .small-title {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+    .thank-content h1 {
+        font-size: 58px;
+
+        letter-spacing: -2px;
+    }
+
+    .main-message {
+        font-size: 19px;
+    }
+
+    .sub-message {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+
+        max-width: 300px;
+
+        text-align: center;
+    }
+
+    .thank-footer {
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+
+        padding: 25px 20px;
+    }
+}
