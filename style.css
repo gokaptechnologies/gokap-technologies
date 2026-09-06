@@ -5375,3 +5375,134 @@ footer {
         letter-spacing: 3px;
     }
 }
+
+/* ===== SCROLL FIX ===== */
+
+html {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px 25px;
+    margin-top: 20px;
+    border: 1px solid #8b5cf6;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #6d28d9, #ec4899);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px 25px;
+    border: 1px solid #e805f0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #002d8d, #e400e9);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ===== ENQUIRY FORM FIX ===== */
+
+html,
+body {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+main {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+form {
+    position: relative !important;
+    z-index: 5 !important;
+    margin-bottom: 80px !important;
+}
+
+textarea {
+    min-height: 160px !important;
+    resize: vertical !important;
+}
+
+.submit-btn {
+    position: relative !important;
+    z-index: 10 !important;
+    display: block !important;
+    margin-top: 25px !important;
+    margin-bottom: 60px !important;
+}
+
+footer {
+    position: relative !important;
+    z-index: 1 !important;
+    clear: both !important;
+    margin-top: 50px !important;
+}
+
+/* ===== FIX TEXT SPACING ===== */
+
+body,
+body * {
+    letter-spacing: normal !important;
+}
+
+/* Navigation */
+nav a,
+.nav-link,
+.navbar a {
+    letter-spacing: 1px !important;
+}
+
+/* Logo / company name */
+.logo,
+.logo-text,
+.brand,
+.brand-name {
+    letter-spacing: 2px !important;
+}
+
+/* Footer */
+footer,
+footer * {
+    letter-spacing: 1px !important;
+}
+
+/* Footer headings and links */
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer p,
+footer a,
+footer li {
+    letter-spacing: 1px !important;
+}
+
+/* Normal paragraphs */
+p {
+    letter-spacing: 0.5px !important;
+}
