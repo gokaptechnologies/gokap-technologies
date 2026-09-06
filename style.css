@@ -5033,3 +5033,345 @@ digital-core {
     color: #666;
     text-align: left;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #02030a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: absolute;
+    top: 35px;
+    left: 6%;
+    right: 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 8px;
+}
+
+.logo-text span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-text small {
+    margin-top: 5px;
+    font-size: 9px;
+    letter-spacing: 6px;
+    color: #aaa;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* =========================
+   GLOWING CURVES
+========================= */
+
+.curve {
+    position: absolute;
+    border: 2px solid #144cff;
+    border-radius: 50%;
+    box-shadow:
+        0 0 8px #144cff,
+        0 0 25px rgba(20, 76, 255, 0.8),
+        0 0 60px rgba(20, 76, 255, 0.4);
+
+    pointer-events: none;
+}
+
+.curve-one {
+    width: 900px;
+    height: 500px;
+
+    left: -120px;
+    top: 180px;
+
+    transform: rotate(-12deg);
+}
+
+.curve-two {
+    width: 900px;
+    height: 500px;
+
+    right: -120px;
+    top: 180px;
+
+    transform: rotate(12deg);
+}
+
+.curve-three {
+    width: 1300px;
+    height: 500px;
+
+    left: 50%;
+    bottom: -330px;
+
+    transform: translateX(-50%);
+
+    border-color: #082dff;
+}
+
+
+/* =========================
+   THANK YOU CONTENT
+========================= */
+
+.thank-you {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 900px;
+
+    text-align: center;
+
+    z-index: 5;
+}
+
+h1 {
+    font-size: clamp(65px, 11vw, 150px);
+
+    font-weight: 800;
+
+    letter-spacing: 12px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #ffffff 30%,
+        #d79cff 55%,
+        #725cff 75%,
+        #22dfff 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    text-shadow:
+        0 0 20px rgba(126, 80, 255, 0.25);
+}
+
+h1 span {
+    color: transparent;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    font-size: 14px;
+
+    letter-spacing: 9px;
+
+    color: #eeeeee;
+
+    margin-bottom: 35px;
+
+    font-weight: 600;
+}
+
+
+/* Message */
+
+.message {
+    color: #bdbdbd;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CHECK MARK
+========================= */
+
+.check-mark {
+    font-size: 38px;
+
+    font-weight: 300;
+
+    color: white;
+
+    margin-bottom: 35px;
+
+    text-shadow:
+        0 0 10px #9b6cff,
+        0 0 25px #5b55ff;
+
+    /* No circle / no ring */
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 18px 34px;
+
+    min-width: 230px;
+
+    border: 2px solid #22dfff;
+
+    border-radius: 40px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    background: rgba(5, 8, 20, 0.5);
+
+    box-shadow:
+        0 0 12px rgba(0, 217, 255, 0.4),
+        0 0 25px rgba(157, 66, 255, 0.25);
+
+    transition: 0.3s;
+}
+
+.back-button span {
+    font-size: 22px;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px #22dfff,
+        0 0 40px #8b4dff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #888;
+
+    font-size: 9px;
+
+    letter-spacing: 7px;
+
+    white-space: nowrap;
+
+    z-index: 10;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        top: 20px;
+        left: 25px;
+        right: 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo-text span {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    .curve-one,
+    .curve-two {
+        width: 650px;
+        height: 400px;
+    }
+
+    footer {
+        font-size: 7px;
+        letter-spacing: 3px;
+    }
+}
